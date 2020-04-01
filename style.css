@@ -1,0 +1,203 @@
+/*ボディ*/
+body{
+    background-color: #eee;
+    font-family: "Hannari";
+    color: #333;
+}
+
+.section-title{
+    text-align: center;
+    margin: 60px 0 80px 0;
+    padding-bottom: 25px;
+    display: inline-block;
+    border-bottom: 1px solid gray;
+}
+
+h2{
+    font-family: 'Caveat', cursive;
+}
+
+
+
+/*ヘッダー*/
+
+header{
+    background-color:#eee;
+}
+
+header a{
+    color: chocolate;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    font-family: 'Caveat', cursive;
+}
+.nav-item{
+    text-align: center;
+    width: 20%;
+}
+
+/*ホーム*/
+.home-section{
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.home-img-box{
+    width: 55%;
+    margin: auto;
+}
+
+.home-section img{
+    width: 100%;
+}
+/*自己紹介*/
+
+.about-section{
+    margin-bottom: 200px;
+}
+
+.about-img-wrapper{
+    text-align: center;
+}
+.about-section img{
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.about-info{
+    text-align: center;
+    vertical-align: middle
+}
+
+.about-info h2{
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.twitter-icon{
+    padding-top:15px;
+}
+
+.about-section a{
+    color:#333;
+}
+
+/*サービス*/
+.service-wrapper{
+    margin-bottom: 200px;
+    text-align: center;
+    background-image: url(../img/skills-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 60px;
+    background-position: center center;
+}
+
+
+/*ワークス*/
+.works-wrapper{
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.works-wrapper h3{
+    display: inline-block;
+    width: auto;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid green;
+}
+
+.works-wrapper img{
+    display: inline-block;
+    position: relative;
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 20px;
+    object-position: 0px 0px;
+}
+
+.work-img .caption {
+	font-size:130%;
+	color:#fff;
+	text-align:center;
+	padding-top:80px;
+}
+.work-img .mask {
+    position:absolute;
+    height: 180px;
+    width: 100%;
+	top:0;
+	left:0;
+	opacity:0;
+	background-color:rgba(0,0,0,0.4);
+	-webkit-transform:rotateY(-180deg);
+	transform:rotateY(-180deg);
+	-webkit-transition:	all 0.6s ease;
+	transition:	all 0.6s ease;
+}
+.work-img:hover .mask {
+	-webkit-transform:rotateY(0deg);
+    transform:rotateY(0deg);
+	opacity:1;	/* ホバーで表示する */
+}
+
+
+/*メニュー*/
+.menu-wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+th{
+    font-family: 'Caveat', cursive;
+}
+
+/*お問い合わせ*/
+.contact-wrapper{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.contact-wrapper p{
+    font-size: 25px;
+}
+
+
+
+
+/*フッター*/
+footer{
+    border-top: 1px solid gray;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer p{
+    display: inline-block;
+}
+
+/*レスポンシブ対応*/
+@media all and (max-width:720px)
+{
+    .home-img-box{
+        width: 80%;
+        margin: auto;
+    }
+
+    .home-section{
+        margin-bottom: 80px;
+    }
+
+    .works-wrapper{
+        margin-bottom: 90px;
+    }
+}
