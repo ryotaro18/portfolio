@@ -90,7 +90,7 @@ header a{
 .service-wrapper{
     margin-bottom: 200px;
     text-align: center;
-    background-image: url(../img/skills-img.jpg);
+    background-image: url(skills-img.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding-bottom: 60px;
