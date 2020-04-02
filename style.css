@@ -5,10 +5,15 @@ body{
     color: #333;
 }
 
+.home-section, .about-section, .works-wrapper, .sc-wrapper, footer{
+    background-color: #eee;
+}
+
 .section-title{
     text-align: center;
-    margin: 60px 0 80px 0;
+    /*margin: 60px 0 80px 0;*/
     padding-bottom: 25px;
+    margin-bottom:45px;
     display: inline-block;
     border-bottom: 1px solid gray;
 }
@@ -42,7 +47,7 @@ header a{
 /*ホーム*/
 .home-section{
     text-align: center;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 
 .home-img-box{
@@ -56,7 +61,7 @@ header a{
 /*自己紹介*/
 
 .about-section{
-    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 
 .about-img-wrapper{
@@ -88,6 +93,30 @@ header a{
 
 /*サービス*/
 .service-wrapper{
+    background-image: none !important;
+    height: 100%;
+    text-align: center;
+}
+
+.service-wrapper::before{
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate3d(0,0,-1px);
+    transform: translate3d(0,0,-1px);
+    width: 100%;
+    min-height: 100%;
+    -webkit-background-size:cover;
+    background-size: cover;
+    z-index: -1;
+    background-image: url(skills-img.jpg);
+    background-position: center bottom;
+}
+
+
+/*.service-wrapper{
     margin-bottom: 200px;
     text-align: center;
     background-image: url(skills-img.jpg);
@@ -95,13 +124,13 @@ header a{
     background-size: cover;
     padding-bottom: 60px;
     background-position: center center;
-}
+}*/
 
 
 /*ワークス*/
 .works-wrapper{
     text-align: center;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 
 .works-wrapper h3{
@@ -150,6 +179,10 @@ header a{
 
 
 /*メニュー*/
+.sc-wrapper{
+	padding-bottom;
+}
+
 .menu-wrapper{
     width: 80%;
     margin: auto;
@@ -176,7 +209,7 @@ th{
 /*フッター*/
 footer{
     border-top: 1px solid gray;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     padding-top: 20px;
     text-align: center;
 }
@@ -194,10 +227,10 @@ footer p{
     }
 
     .home-section{
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 
     .works-wrapper{
-        margin-bottom: 90px;
+        padding-bottom: 90px;
     }
 }
