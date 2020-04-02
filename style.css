@@ -203,6 +203,11 @@ th{
     font-size: 25px;
 }
 
+.contact-wrapper input, .contact-wrapper textarea{
+    max-width: 90%;
+}
+
+
 
 
 
