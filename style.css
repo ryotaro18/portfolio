@@ -93,7 +93,7 @@ header a{
 
 /*サービス*/
 .service-wrapper{
-    background-image: none !important;
+    background-color: rgba(238, 238, 238, 0);
     height: 100%;
     text-align: center;
 }
